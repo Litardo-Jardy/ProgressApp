@@ -1,0 +1,297 @@
+.container_rutines{
+    overflow: hidden;
+    width: 88%;
+    margin-left: 61px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+
+.container_create_rutines{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
+
+/*Icons ------------------------------------------*/
+.icon_card_container_rutines{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;}
+    
+.icon_card_rutines{
+    cursor: pointer;
+    position: relative;
+    top: 18px;}
+
+/*Card Routine ------------------------------------------*/
+
+.container_info_rutine{
+    margin-top: -30px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+
+.text_caracteristicas{
+    width: 30%;
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-size: 14px;}
+
+.text_title_caracteristicas{
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;}
+
+.container_descripcion_routine{
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 15px;}
+
+.container_exercise_rutine{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    left: 15px;}
+
+
+/*Card exercise Routine ------------------------------------------*/
+.container_card_exercise_rourines{
+    position: relative;
+    margin: -5px;}
+
+.text_card_exercise_routines{
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-size: 13.5px;}
+
+.title_doroutines_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;}
+
+.button_dorouties_one{
+    position: relative;
+    top: 65px;
+    font-size: 20px;
+    height: 30px;
+    border-bottom: 2px solid #749BC2;
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    left: 17px}
+
+.title_unique_doroutine{
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    top: 35px;
+    left: 8px;}
+
+/*Realizacion de rutina --------------------------------------------*/
+.container_realizacion_routines{
+   display: flex;
+   overflow: hidden;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;}
+
+.title_realizacion_routines{
+  display: flex;
+  justify-content: space-between;}
+
+.time_routine{
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    margin: 25px;
+    font-size: 25px;}
+
+.icon_realizacion_rotuine{
+    position: relative;
+    margin: 25px;}
+
+.container_exercise_routine_card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.exercise_doroutine_card{
+    border-bottom: #000000 solid 1px;
+    width: 75%;
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    margin: 20px;}
+
+.container_button_routine{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.button_doroutine{
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #749BC2;
+    box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+   -webkit-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+   -moz-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    width: 90%;
+    border-radius: 15px;}
+
+/*TIME ----------------------------------------------*/
+
+.container_time_exercise{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 8px;
+    justify-content: center;
+    text-align: center;}
+
+.circle_progress{
+    text-align: center;}
+
+.container_card_realizar_exercise{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between}
+
+.container_time_exercise_two{
+    position: relative;
+    left: -7px;
+    width: 100%;}
+
+.container_card_realizacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+
+.name_excercise_one{
+    margin: 10px;
+    font-size: 20px;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-weight: bold;}
+
+.input_realizacion_rourines{
+    border: none;
+    position: relative;
+    left:-14px;
+    text-align: right;
+    width: 68px;
+    margin: 10px;
+    padding: 6px;
+    font-size: 17px;
+    border: 1px solid #dfd6d6;
+    background-color: #fff;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+   -webkit-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+   -moz-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);}
+
+.label_realizacio_routines{
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    z-index: 1;
+    position: relative;
+    left: 27px;}
+
+.container_title_medium{
+    width: 100%;
+    margin: 5px;
+    position: relative;
+    left: 5px;
+    padding: 15px;
+    font-size: 21px;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+   font-weight: bold;}
+
+.create_card_realizacion{
+    display: flex;
+    width: 80%;
+    margin: 20px;
+    position: relative;
+    left: 15px;
+    top:15px;
+    justify-content: left;
+    flex-direction: row}
+
+.container_caracteristicas_realizacion{
+    display: flex;
+    flex-direction: column}
+
+.name_excercise_two{
+    margin: 2px;
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;}
+
+.image_realizacion{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    object-fit: cover}
+
+.title_window_card{
+    text-align: center;
+    font-size: 27px;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    margin: 20px;}
+
+.container_button_routine_one{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around}
+ 
+.button_window{
+    border: none;
+    border-radius: 5px;
+    width: 45%;
+    background-color: #749BC2;
+    box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    font-size: 15px;
+    margin: 10px;
+    padding: 13px;
+    cursor: pointer;
+    color: #fff;}

@@ -1,0 +1,17 @@
+.container_doroutine{
+    overflow: hidden;
+    width: 88%;
+    margin-left: 61px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+
+.title_unique_routine{
+    margin: 10px;
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

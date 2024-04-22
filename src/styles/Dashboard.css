@@ -1,0 +1,94 @@
+.container_dashboard{
+    overflow: hidden;
+    width: 88%;
+    margin-left: 61px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+
+.container_create_exercise_h{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto 10px auto;
+    border: 1px solid #dfd6d6;
+    background-color: #fff;
+    box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+   -webkit-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+   -moz-box-shadow: 0px 1px 8px -3px rgba(0,0,0,0.65);
+    border-radius: 15px;
+    padding: 8px;
+    overflow: hidden;}
+
+/*Search ------------------------------------------*/
+.container_search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 23px;}
+
+.input_search{
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 0px 8px 3px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 79%;}
+
+.icon_search{
+    width: 10%;
+    position: relative;
+    display: flex;}
+
+.number_dashboard{
+    position: absolute;
+    color: red;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    left: 22px;
+    top: -5px;}
+
+.container_notis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 23px;}
+
+.container_card_notis{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    top: -16px;
+    margin-top: 20px;
+    border-bottom: 1px solid #dfd6d6; }
+
+.title_noti{
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #000;
+    width: 90%;
+    font-size: 12px;
+    padding: 8px 0px 8px 3px;}
+
+.title_noti_card{
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.icon_notis{
+    width: 10%;
+    display: flex;
+    justify-content: right;}

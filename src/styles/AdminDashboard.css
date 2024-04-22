@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: row;}
+
+.container_admin_dashboard{
+    overflow: hidden;
+    width: 88%;
+    margin-left: 61px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+
+.container_title_admin_dashboard{
+    margin: 10px;
+    position: relative;
+    left: 10px;
+    width: 100%;}
+
+.title_admin_dashboard{
+    font-size: 33px;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+.container_cards_admin_dashboard{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+
+
+.text_peticion_card_dashboard{
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    position: relative;
+    top: -5px;
+    left: -15px;}
+
+.container_create_exercise_one_card{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    justify-content: center;}
+
+
+.container_form_exercise{
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;}
+
+.exercise_input{
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #dfd6d6;
+    background-color: #f8f5f5;
+    border-radius: 10px;}
+
+.number_card_exercise_dashboard{
+    position: absolute;
+    color: red;
+    font-family: "Noto Sans Old South Arabian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    left: 28px;
+    top: -5px;}
