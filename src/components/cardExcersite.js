@@ -11,16 +11,6 @@ import { FaCheck } from "react-icons/fa6";
 
 const CardExercise = (props) =>{
 
-    const datosStorage = localStorage.getItem('user');
-    useEffect(() =>{
-      if(datosStorage){
-        setUser(JSON.parse(datosStorage))
-      }else{
-         const resultado = window.confirm("Necesitas iniciar sesión para realizar esta acción");
-         if(resultado){
-            window.location.href = "/"}}
-    }, []);
-
     const [routines, setRoutines] = useState([]);
     const [reps, setReps] = useState("");
     const [series, setSeries] = useState("");

@@ -79,7 +79,7 @@ const RealizarRoutines = () => {
       setStart(true);}
 
     const decrementSerie = () =>{//Button to start the counter;
-      if(count < 1){
+      if(count <= 1){
          if(exercises.length > 0){
             setExercise(exercises[0]);
             setCount(exercises[0].serie);
@@ -100,9 +100,9 @@ const RealizarRoutines = () => {
       setTimeExercise(0)}
  
     //Actions dependeting ----------------------------------------------------------------;
-    useEffect(() => {//
+    useEffect(() => {
       const handleBeforeUnload = (event) => {
-        const confirmationMessage = '¿Seguro que quieres recargar la página? La informacion recopilada se perdera.';
+        const confirmationMessage = '¿Seguro que quieres recargar la página? La informacion recopilada se perdera en caso de que no hayas terminado el entrenamiento.';
         event.returnValue = confirmationMessage; 
         return confirmationMessage}
   

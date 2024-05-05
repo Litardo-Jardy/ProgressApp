@@ -4,7 +4,6 @@ import useFetch from '../Services/useFetch';
 
 import { useState } from 'react';
 
-import { FaCheck } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 import { FaSave } from "react-icons/fa";
@@ -34,10 +33,6 @@ const CardAdminDashboard = (props) =>{
        const {} = postMethod(info);
        setArray([true, color, state])
        setEdit("none");}
-
-    const allowExercise = (ejercicio, titulo, descripcion, user) =>{
-        requestsAccept(`edit_ejercicio&id=${ejercicio}&name=${titulo}&descripcion=${descripcion}&public=${1}`,"green","Aceptado");
-        requestsAccept(`create_notificaciones&user=${user}&message=¡Felícidades tu peticion a sido aceptada! ${titulo} ya esta disponible como ejercicio.`,"green","Aceptado")}
 
     const deleteExercise = (ejercicio, titulo, user) =>{
         requestsAccept(`delete_ejercicio&id=${ejercicio}`,"red","Rechazado");
@@ -87,7 +82,6 @@ const CardAdminDashboard = (props) =>{
                    <h3 className='title_card'>{props.title}<br />------------------------------------</h3>
                    {array[0] ? <p className='text_peticion_card_dashboard' style={{ color: array[1]}} >{array[2]}</p>: 
                        <span className='icon_card_dashboard'>
-                           <FaCheck onClick={() => allowExercise(props.id, props.title, props.descripcion, props.user)} className="icon_card_click_dashboard" size="25px" color="green" />
                            <IoCloseSharp onClick={() => deleteExercise(props.id, props.title, props.user)} className="icon_card_click_dashboard" size="25px" color="red" />
                            <FaRegEdit onClick={preEditExercise} className="icon_card_click_dashboard" size="25px" color="#749BC2" />
                        </span>}

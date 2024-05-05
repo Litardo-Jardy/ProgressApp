@@ -18,6 +18,21 @@ const Exercises = () =>{
    const [arrayTwo, setArrayTwo] = useState([]);
    const [search, setSearch] = useState('');
    const [error, setError] = useState(["none", "", ""]);
+   const [user, setUser] = useState([]);
+
+   //Validacion para ver si el usuario esta logeado.
+   const datosStorage = localStorage.getItem('user');
+    useEffect(() =>{
+      if(datosStorage){
+        setUser(JSON.parse(datosStorage))
+      }else{
+         const resultado = window.confirm("Necesitas iniciar sesión para realizar esta acción");
+         if(resultado){
+            window.location.href = "/"
+          }else{
+            window.location.href = "/Dashboard"
+          }}
+    }, []);
 
    //Mostrando ejercicios. GET
    const { data, loading, errors, postMethod } = useFetch('view_ejercicio');
@@ -82,7 +97,7 @@ const Exercises = () =>{
             </div>
             <div className='container_create_rutines'>
                <div className='create_card' style={{ display: "flex", flexDirection: "row"}}>
-                 <h3 className='title_card'>Crear ejercico<br />---------------------------------------</h3>
+                 <h3 className='title_card'>Proponer nuevo ejercico<br />---------------------------------------</h3>
                  <span className='icon_card'><FaPlusCircle onClick={handleChangeIcon} className="icon_card_click" size="28px" color="#749BC2" /></span>
                </div>
             </div>

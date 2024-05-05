@@ -52,10 +52,9 @@
 
 .icon_card_click_dashboard{
     cursor: pointer;
-    margin: 3px;
+    margin: 10px;
     position: relative;
     top: 13px;
-    left: -10px;
 }
 
 /*Search ------------------------------------------*/

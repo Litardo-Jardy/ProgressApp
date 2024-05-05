@@ -44,12 +44,12 @@ const Navbar = () =>{
      
         <div className='container_navbar' style={{ width: show ? '203px': '60px'}}>
           <span style={{ left: show ? '160px': '19px' }} onClick={handleShow} className='arrow'>{show ? <FaArrowLeft size="23px" color="#000" />: <FaArrowRight size="23px" color="#000" /> }</span>
-          <Link className='link' to="/dashboard" ><span className='element'><IoRocketOutline className='icon_navbar' size="25px" color="#000" /><span className='text_element'>{show ? "Progress App" : "" }</span></span></ Link>
-          <Link className='link' to="/dashboard" ><span className='element'><FaHome className='icon_navbar' size="25px"  /><span className='text_element'>{show ? "Inicio" : "" }</span></span></Link>
+          <Link className='link' to="/Default" ><span className='element'><IoRocketOutline className='icon_navbar' size="25px" color="#000" /><span className='text_element'>{show ? "Progress App" : "" }</span></span></ Link>
+          <Link className='link' to="/Default" ><span className='element'><FaHome className='icon_navbar' size="25px"  /><span className='text_element'>{show ? "Inicio" : "" }</span></span></Link>
           <Link className='link' to="/Routines" ><span className='element'><FaList className='icon_navbar' size="21px" /><span className='text_element'>{show ? "Rutinas" : "" }</span></span></Link>
           <Link className='link' to="/Exercises" ><span className='element'><GiMuscleUp className='icon_navbar' size="25px" /><span className='text_element'>{show ? "Ejercicios" : "" }</span></span></Link>
-          <Link className='link' to="/dashboard" ><span className='element'><GiProgression className='icon_navbar' size="23px" /><span className='text_element'>{show ? "Progresos" : "" }</span></span></Link>
-          <Link className='link' to="/dashboard" ><span className='element'><CgProfile className='icon_navbar' size="25px" /><span className='text_element'>{show ? "Perfil" : "" }</span></span></Link>
+          <Link className='link' to="/Default" ><span className='element'><GiProgression className='icon_navbar' size="23px" /><span className='text_element'>{show ? "Progresos" : "" }</span></span></Link>
+          <Link className='link' to="/Default" ><span className='element'><CgProfile className='icon_navbar' size="25px" /><span className='text_element'>{show ? "Perfil" : "" }</span></span></Link>
           {dataUser == 1 ? <Link className='link' to="/Admin"> <span className='element'><span className='number_card_exercise_dashboard'><b>{count > 0 ? count : null}</b></span><LuLayoutPanelLeft className='icon_navbar' size="25px" /><span className='text_element'>{show ? "Panel de control" : "" }</span></span></Link> : null}
           <Link onClick={clearRecordId} className='link' to="/"> <span className='element'><CiLogout className='icon_navbar' size="25px" /><span className='text_element'>{show ? "Cerrar sesion" : "" }</span></span></Link>
          

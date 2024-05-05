@@ -10,6 +10,7 @@ import AdminDashboard from './components/adminDashboard';
 import Rutines from './components/Rutines';
 import DoRoutines from './components/doRoutines';
 import RealizarRoutines from './components/realizacionRoutines';
+import PageDefault from './components/pageDefault';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Routines" exact element={ <Rutines /> } />
         <Route path="/Routines/:id/:name" exact element={ <DoRoutines /> } />
         <Route path="/Routines/:id/:name/realizar" exact element={ <RealizarRoutines /> } />
+        <Route path="/Default" element={ <PageDefault /> } />
       </Routes>
     </Router>
   )}
