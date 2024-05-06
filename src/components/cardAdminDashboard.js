@@ -52,7 +52,7 @@ const CardAdminDashboard = (props) =>{
         <>
         <div style={{ display: edit}} className="create_card">
                     <div className='container_title_card'>
-                       <h3 className='title_card'>Crear nuevo ejercicio<br />---------------------------------------</h3>
+                       <h3 className='title_card'>Crear nuevo ejercicio<br />------------------------------</h3>
                        <span className='icon_card'><FaSave onClick={() => editExercise(props.id, nombre, descripcion, props.user)} className="icon_card_click" size="28px" color="#749BC2" /></span>
                     </div>
                     <div className="container_form_exercise">

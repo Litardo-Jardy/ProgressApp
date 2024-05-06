@@ -68,8 +68,8 @@ const CardDoRoutines = (props) =>{
              <MessageErros />
              <div className='container_title_card'>
                  {deletes ?
-              <h3 style={  { textDecoration: "line-through", textDecorationColor:" red" } } className='title_card'>{props.ejercicio}<br />---------------------------------------</h3> 
-               :<h3 className='title_card'>{props.ejercicio}<br />---------------------------------------</h3>}
+              <h3 style={  { textDecoration: "line-through", textDecorationColor:" red" } } className='title_card'>{props.ejercicio}<br />-----------------------------</h3> 
+               :<h3 className='title_card'>{props.ejercicio}<br />-----------------------------</h3>}
                  <span className='icon_card_container_rutines'>
                  {deletes == false ? <FaRegEdit onClick={() => showEdit(props.id, props.intensidad, props.series, props.peso, props.reps, props.tiempo)} className="icon_card_rutines" size="25px" color="#749BC2" /> : null} 
                  {deletes == false ? <RiDeleteBin6Line onClick={() => deleteExercise(props.id)} className="icon_card_rutines" size="25px" color="red" /> :null}

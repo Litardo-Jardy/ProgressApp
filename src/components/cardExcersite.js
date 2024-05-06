@@ -18,7 +18,8 @@ const CardExercise = (props) =>{
     const [tiempo, setTiempo] = useState("");
     const [intensidad, setIntensidad] = useState("");
     const [rutinas, setrutinas] = useState(0);
-    const [user, setUser] = useState([]);
+      const datosStorage = localStorage.getItem('user');
+      const user = JSON.parse(datosStorage);
 
     const [error, setError] = useState(["none", "", ""]);
     const [show, setShow] = useState(false);
@@ -40,6 +41,7 @@ const CardExercise = (props) =>{
     useEffect(() => {
         if(data){
           setRoutines(data.Routines)}
+          console.log(user.id);
     }, [data]);
 
     const showCreateEspe = () => {
@@ -118,7 +120,7 @@ const CardExercise = (props) =>{
                     </select> 
 
                     <select value={rutinas} onChange={handleChangeRutinas}  className="exercise_input exercise_nombre" >
-                    <option key={0} >Rutinas:</option>
+                    <option >Rutinas:</option>
                          {routines.length > 0 ? routines.map(element => 
                             <option key={element.id} value={element.id}>
                                 {element.titulo}

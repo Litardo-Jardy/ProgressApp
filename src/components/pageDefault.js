@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
     return(
         <div className="container">
             <Navbar />
-            <div className='container_exercites'>
+            <div className='container_exercitess'>
                 <div className="text_default_container">
                     <FaMedkit color="#749BC2" size={60} style={{ width: "100%"}} />
                     <h2 style={{ width: "100%", textAlign: "center" }}>Modulo en mantenimiento</h2>
