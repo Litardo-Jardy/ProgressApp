@@ -94,7 +94,7 @@ const CardRutines = (props) => {
           <div className='container_title_card'>
             {deletes ?
             <h3 style={  { textDecoration: "line-through", textDecorationColor:" red" } } className='title_card'>{edits[0] == false ? props.title : edits[1]}<br />---------------------------------------</h3> 
-             :<h3 className='title_card'>{edits[0] == false ? props.title : edits[1]}<br />---------------------------------------</h3>}
+             :<h3 className='title_card'>{edits[0] == false ? props.title : edits[1]}<br />--------------------------------</h3>}
              <span className='icon_card_container_rutines'>
                {deletes == false ?<Link to="/Exercises"><FaPlusCircle className="icon_card_rutines" size="23px" color="green" /></Link> : null}
                {deletes == false ? <FaRegEdit onClick={() => showEdit(props.id, props.title, props.descripcion, props.rango, props.id_categoria)} className="icon_card_rutines" size="25px" color="#749BC2" /> : null} 
@@ -120,13 +120,13 @@ const CardRutines = (props) => {
           </div>
           </Link>
           <div className='container_descripcion_routine'>
-              <p className='text_caracteristicas'>{edits[0] == false ? props.descripcion : edits[2]}</p>
+              <p style={{ width: "100%", fontSize:"15px"}} className='text_caracteristicas'>{edits[0] == false ? props.descripcion : edits[2]}</p>
           </div>
       </div>
       <div style={{ display: show ? "flex": "none", width: "300px" }} className="container_create_exercise_one">
             <div className="create_card">
                  <div className='container_title_card'>
-                    <h3 className='title_card'>Editar rutina<br />---------------------------------------</h3>
+                    <h3 className='title_card'>Editar rutina<br />----------------------------------</h3>
                     <span className='icon_card'><FaSave onClick={editInfoRoutines} className="icon_card_click" size="28px" color="#749BC2" /></span>
                  </div>
                     <div className="container_form_exercise">

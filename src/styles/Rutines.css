@@ -84,8 +84,9 @@
 
 .button_dorouties_one{
     position: relative;
-    top: 65px;
-    font-size: 20px;
+    top: 28px;
+    text-align: center;
+    font-size: 10px;
     height: 30px;
     border-bottom: 2px solid #749BC2;
     text-decoration: none;

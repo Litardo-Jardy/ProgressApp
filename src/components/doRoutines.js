@@ -5,19 +5,18 @@ import Navbar from './Navbar';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import CardDoRoutines from './cardDoRoutines';
-import { FaPlusCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const DoRoutines = () =>{
 
     const { id, name } = useParams();
     const [routines, setRoutines] = useState([]);
-    const { data, loading, errors, postMethod } = useFetch(`view_rutina_ejercicio&id=${id}`);
+    const { data, loading, errors} = useFetch(`view_rutina_ejercicio&id=${id}`);
 
     useEffect(() => {
         if(data){
           if(data.Routines[0].id > 0){
-            if(data.Routines[0].nombre_rutina == name){
+            if(data.Routines[0].nombre_rutina.trim() === name.trim()){
                 setRoutines(data.Routines)}}}
     }, [data]);
 
@@ -31,7 +30,7 @@ const DoRoutines = () =>{
                     <h2 className='title_unique_doroutine'>{data.Routines[0].nombre_rutina}</h2>
                 </div>
                 <div className='button_dorouties_one'>
-                    <Link style={{ textDecoration: 'none', color: '#000'}} to={`/Routines/${id}/${name}/realizar`}>
+                    <Link style={{ textDecoration: 'none', color: '#000', fontSize:"20px"}} to={`/Routines/${id}/${name}/realizar`}>
                     Iniciar rutina
                     </Link>
                 </div>

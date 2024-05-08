@@ -6,9 +6,9 @@
     justify-content: center;
     flex-direction: column}
 
-.title_unique_routine{
+.title_unique_doroutine{
     margin: 10px;
-    font-size: 40px;
+    font-size: 25px;
     position: relative;
     top: 15px;
     font-family: "Noto Sans Old South Arabian", sans-serif;
@@ -34,5 +34,4 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 175px;
-}
+    margin-top: 175px;}
